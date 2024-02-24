@@ -1,8 +1,82 @@
-<html>
-  <head>
-    <title></title>
-  </head>
-  <body>
-    
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lukey</title>
+  <style>
+    body {
+      font-family: 'Courier New', monospace;
+      margin: 0;
+      overflow-x: hidden;
+      display: flex;
+      height: 100vh;
+      background-color: #1e1e1e;
+      color: #00ff00;
+    }
+
+    #terminal {
+      padding: 20px;
+      border: 2px solid #00ff00;
+      border-radius: 10px;
+      width: 100%;
+      background-color: #000000;
+      box-shadow: 0 0 10px rgba(12, 202, 12, 0.5);
+    }
+
+    .prompt {
+      color: #ff0000;
+    }
+
+    a {
+      color: #00ff00;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .social-icons {
+      align-items: center;
+      justify-content: space-around;
+      margin-top: 20px;
+    }
+
+    .social-icons a {
+      font-size: 18px;
+    }
+
+    @keyframes blink {
+      50% {
+        opacity: 0;
+      }
+    }
+
+    .cursor::after {
+      content: '|';
+      animation: blink 1s infinite;
+    }
+
+    @media only screen and (max-width: 600px) {
+      #terminal {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="terminal">
+    <p><span class="prompt">lukey@developer:~#</span> Welcome to Lukey's Developer Terminal</p>
+    <p><span class="prompt">lukey@developer:~#</span> Connect with Lukey on:</p>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/zartazor" target="_blank">Instagram</a><br><br>
+      <a href="https://t.me/Lukeiybot" target="_blank">Telegram(bot)</a><br><br>
+      <a href="https://xdaforums.com/m/zartazor.12014141/" target="_blank">XDA Dev</a><br><br>
+      <a href="tel:+919526490469" target="_blank">Call</a><br><br>
+    </div>
+    <p><span class="prompt">lukey@developer:~<span class="prompt-simbol">#</span></span> Feel free to explore and get in touch!</p>
+    <p><span class="prompt">lukey@developer:~#</span><div class="cursor"></div>
+  </div>
+</body>
 </html>

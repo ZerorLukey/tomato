@@ -1,3 +1,7 @@
+html{
+  scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Courier New', monospace;
     margin: 0;
@@ -58,13 +62,13 @@ body {
     }
   }
 img{
-  border-radius: 1rem;
+  padding: 20px;
   object-fit: cover;
   cursor: pointer;
   transform: perspective(1000px)
   rotateX(60deg)
   scale(0.7);
-  
+  transition: 1s;
 }
 
 img:hover{
